@@ -3,8 +3,8 @@ import pandas as pd
 from src.data_preprocessing import preprocess_data
 
 def test_preprocess_data_creates_output():
-    input_path = r"data\Australian_Vehicle_Price_X_data.csv"
-    output_path = r"data\Australian_Vehicle_Price_X_data_cleaned.csv"
+    input_path = os.path.join("data", "Australian_Vehicle_Price_X_data.csv")
+    output_path = os.path.join("data", "Australian_Vehicle_Price_X_data_cleaned.csv")
 
     preprocess_data(input_path,output_path)
 

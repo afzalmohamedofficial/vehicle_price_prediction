@@ -2,6 +2,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 
 def evaluate_model(X_data_csv, y_data_csv, model_path):
@@ -17,8 +18,8 @@ def evaluate_model(X_data_csv, y_data_csv, model_path):
 
 
 if __name__ =="__main__":
-    X_data_input_path = r"data\Australian_Vehicle_Price_X_data.csv"
-    y_data_input_path = r"data\Australian_Vehicle_Price_y_data.csv"
-    model_path = r"models\linear_model.pkl"
+    X_data_input_path = os.path.join("data", "Australian_Vehicle_Price_X_data.csv")
+    y_data_input_path = os.path.join("data", "Australian_Vehicle_Price_y_data.csv")
+    model_path = os.path.join("models", "linear_model.pkl")
     evaluate_model(X_data_input_path, y_data_input_path, model_path)
 

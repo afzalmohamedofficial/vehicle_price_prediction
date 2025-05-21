@@ -4,9 +4,9 @@ from src.train_model import train_and_save_model
 
 
 def test_train_model_saves_file():
-    X_path = r"data\Australian_Vehicle_Price_X_data.csv"
-    y_path = r"data\Australian_Vehicle_Price_y_data.csv"
-    model_path = r"models\linear_model.pkl"
+    X_path = os.path.join("data", "Australian_Vehicle_Price_X_data.csv")
+    y_path = os.path.join("data", "Australian_Vehicle_Price_y_data.csv")
+    model_path = os.path.join("models", "linear_model.pkl")
 
     train_and_save_model(X_path, y_path, model_path)
 

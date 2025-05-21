@@ -18,8 +18,8 @@ def train_and_save_model(X_data_csv, y_data_csv, model_path):
 
 
 if __name__ == "__main__":
-    X_data_input_path = r"data\Australian_Vehicle_Price_X_data.csv"
-    y_data_input_path = r"data\Australian_Vehicle_Price_y_data.csv"
-    model_path = r"models\linear_model.pkl"
+    X_data_input_path = os.path.join("data", "Australian_Vehicle_Price_X_data.csv")
+    y_data_input_path = os.path.join("data", "Australian_Vehicle_Price_y_data.csv")
+    model_path = os.path.join("models", "linear_model.pkl")
     train_and_save_model(X_data_input_path, y_data_input_path, model_path)
 
