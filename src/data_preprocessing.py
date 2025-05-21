@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-inputpath = os.path.join("data, "Australian_Vehicle_Price_X_data.csv")
-outputpath = os.path.join("data, "Australian_Vehicle_Price_list_cleaned.csv")                         
+inputpath = os.path.join("data", "Australian_Vehicle_Price_X_data.csv")
+outputpath = os.path.join("data", "Australian_Vehicle_Price_list_cleaned.csv")                         
 
 # function here
 
